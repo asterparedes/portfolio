@@ -1,28 +1,179 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aster Paredes Morales | Home</title>
-    <meta name="description" content="description of page using keywords">
-    <meta name="author" content="Aster Paredes Morales">
-    <link rel="stylesheet" href="styles/base.css">
-</head>
-<body>
-    <header>
-        <a id="main-logo" href="index.html"></a>
-    </header>
-    <nav>
-        <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <main></main>
-    <footer>
-        <p>&copy;<span id="year"></span>  Aster Paredes Morales</p>
-    </footer>
-    <script src="scripts/main.js"></script>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Aster Paredes Morales | Web Developer</title>
+        <meta name="description" content="Personal web developer portfolio">
+        <meta name="author" content="Aster Paredes">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header / Navigation  -->
+        <header class="header">
+            <div class="container nav">
+                <h1 class="logo">Aster Paredes</h1>
+
+                <nav>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+        </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container hero-grid">
+
+                    <!-- Left: Text -->
+                    <div class="hero-text">
+                        <h2>Web Developer & Web Content Coordinator</h2>
+
+                        <p>
+                        I build and maintain clean, user-friendly websites with a focus on structure,
+                        usability, and meaningful content.
+                        </p>
+
+                        <div class="hero-buttons">
+                        <a href="#projects" class="btn">View Projects</a>
+                        <a href="AsterParedesMorales-Resume.pdf" class="btn-outline" target="_blank">View Resume
+                        </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Photo -->
+                    <div class="hero-image">
+                        <img src="images/profile-picture.webp" 
+                        alt="Aster Paredes - Web Developer" 
+                        class="profile-photo">
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section">
+                <div class="container">
+                    <h3>About Me</h3>
+
+                    <p>
+                        I am a detail-oriented web developer and designer with hands-on experience
+                        building and managing nonprofit websites. I specialize in organizing content, improving navigation, and maintaining accurate, accessible pages.
+                    </p>
+                    <p>
+                        I completed a Web and Computer Programming Certificate from BYU Idaho and enjoy
+                        working with mission-driven teams on meaningful projects.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Projects Section -->
+            <section id="projects" class="section cards">
+            <div class="container">
+                <h3>Projects</h3>
+
+                <div class="projects-grid">
+
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <img src="images/bountiful-children's-foundation.webp" alt="Bountiful Children’s Foundation website">
+                    <div class="project-content">
+                    <h4>Bountiful Children’s Foundation Philippines</h4>
+                    <p class="project-role">Website Content Coordinator</p>
+                    <p>
+                        Structured and maintained a 50+ page nonprofit website to improve navigation,
+                        showcase programs, and support donor engagement.
+                    </p>
+                    <p class="project-tools">WordPress · HTML · CSS</p>
+                    <a href="#" class="project-link" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <img src="images/momivate.webp" alt="Momivate website">
+                    <div class="project-content">
+                    <h4>Momivate</h4>
+                    <p class="project-role">Website Helper</p>
+                    <p>
+                        Managed weekly blog uploads, formatting, and basic SEO optimization
+                        for consistent and search-friendly content.
+                    </p>
+                    <p class="project-tools">WordPress · SEO Basics</p>
+                    <a href="#" class="project-link" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <img src="images/profile-picture.webp" alt="Personal portfolio website">
+                    <div class="project-content">
+                    <h4>Personal Portfolio</h4>
+                    <p class="project-role">Web Developer</p>
+                    <p>
+                        Designed and developed a responsive portfolio using HTML, CSS,
+                        and JavaScript to showcase projects and skills.
+                    </p>
+                    <p class="project-tools">HTML · CSS · JavaScript</p>
+                    <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </section>          
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <div class="container">
+                    <h3>Skills</h3>
+
+                    <div class="skills-grid">
+                        <ul>
+                            <li><ion-icon name="logo-html5" size="large"></ion-icon>HTML</li>
+                            <li>CSS</li>
+                            <li>WordPress</li>
+                            <li>Website Content Management</li>
+                            
+                        </ul>
+                        <ul>
+                            <li>Canva</li>
+                            <li>Basic SEO</li>
+                            <li>Google Workspace</li>
+                            <li>Attention to Detail</li>
+                            <li>Remote Collaboration</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Contact Section -->
+            <section id="contact" class="section card">
+                <div class="container">
+                    <h3>Contact Me</h3>
+
+                    <p>
+                        Feel free to reach out for opportunities, collaborations, or questions
+                    </p>
+                    <p class="contact-info">
+                        📧 <a href="mailto:asterparedesmorales@gmail.com">asterparedesmorales@gmail.com</a>
+                        💼 <a href="https://www.linkedin.com/in/asterparedesmorales" target="_blank">LinkedIn Profile</a>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy;<span id="year"></span>  Aster Paredes</p>
+        </footer>
+        <script src="scripts/main.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    </body>
 </html>
